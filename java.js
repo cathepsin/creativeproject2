@@ -1,11 +1,11 @@
-document.getElementById("stockSubmit").addEventListener("click", function(event) {
+document.getElementById("submit_button").addEventListener("click", function(event) {
   event.preventDefault();
-  const value = document.getElementById("stockInput").value;
-  if (value === "")
-    return;
-  console.log(value);
+  var sign = document.querySelector('input[name="sign"]:checked').value;
+  var day = document.querySelector('input[name="day"]:checked').value;
+  console.log(sign)
+  console.log(day)
 
-  const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+  const URL = 'https://aztro.sameerkumar.website/?sign='+sign+'&day='+day;
 fetch(URL, {
     method: 'POST'
 })
