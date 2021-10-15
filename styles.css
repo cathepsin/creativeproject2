@@ -1,0 +1,9 @@
+body{
+  background-image: url("/images/const..jpg");
+  color: #EFEFEF;
+}
+
+#intr,
+#results{
+  display: flex;
+}

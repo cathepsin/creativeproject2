@@ -5,13 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Weather Forcast</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div id="intr">
     <h1 id="h_title">Weather Anywhere</h1>
 
+    <div id="intr">
     <div id='submit_form'>
       <form id='sign_choice'>
         <h2>Select your sign</h2>
@@ -46,13 +46,15 @@
         <input type='radio' id='Today' name='day' value='today'>
         <label for='Today'>Today</label><br>
         <input type='radio' id='Tomorrow' name='day' value='tomorrow'>
-        <label for='Tomorrow'>Tomorrow</label><br>
+        <label for='Tomorrow'>Tomorrow</label><br><br>
       </form>
       <input id="submit_button" type="submit" value="Submit"></input>
     </div>
-    <div id="signResults">
     </div>
-  </div>
+
+    <div id="signResults">
+      <p>"WE ARE HERE"</p>
+    </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>

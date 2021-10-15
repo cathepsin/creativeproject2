@@ -13,23 +13,14 @@ fetch(URL, {
 .then(json => {
     const date = json.current_date;
     console.log(json);
+    document.getElementById("signResults").style.backgroundImage= "url('images/"+sign+".svg')";
+    document.getElementById("signResults").style.backgroundRepeat="no-repeat";
     let results = "";
       results += "<h2>Welcome " + sign + "!</h2>";
       results += "<p>Your color is " + json.color + "</p>";
       results += "<p>Your lucky number is " + json.lucky_number + "</p>";
       results += "<p>Your lucky time is " + json.lucky_time + "</p>";
       results += "<p>" + json.description + "</p>";
-  //     for (let i=0; i < json.weather.length; i++) {
-	// results += '<img src="http://openweathermap.org/img/w/' + json.weather[i].icon + '.png"/>';
-  //     }
-  //     results += '<h2>' + json.main.temp + " &deg;F</h2>"
-  //     results += "<p>"
-  //     for (let i=0; i < json.weather.length; i++) {
-	// results += json.weather[i].description
-	// if (i !== json.weather.length - 1)
-	//   results += ", "
-  //     }
-  //     results += "</p>";
       document.getElementById("signResults").innerHTML = results;
 });
 });
