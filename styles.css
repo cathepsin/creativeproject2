@@ -11,6 +11,7 @@ h1 {
   border-style: double;
 }
 
+
 h2 {
     text-decoration: underline;
 }
@@ -53,7 +54,37 @@ footer{
 #intr{
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+#submit_form{
+  width: 75%;
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom: 10%;
+  text-size: 4vw;
+}
+
+#submit_button{
+  width: auto;
+  margin-bottom: 5%;
+
+}
+
+#fimage{
+  width: 5%;
+}
+
+form {
+  font-size: 3vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+p {
+  font-size: 3vw;
 }
 
 
