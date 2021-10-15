@@ -15,6 +15,7 @@ fetch(URL, {
     console.log(json);
     document.getElementById("signResults").style.backgroundImage= "url('images/"+sign+".svg')";
     document.getElementById("signResults").style.backgroundRepeat="no-repeat";
+    document.getElementById("signResults").style.backgroundPosition="center";
     let results = "";
       results += "<h2>Welcome " + sign + "!</h2>";
       results += "<p>Your color is " + json.color + "</p>";
