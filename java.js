@@ -5,11 +5,13 @@ document.getElementById("stockSubmit").addEventListener("click", function(event)
     return;
   console.log(value);
 
-  const url = "https://api.twelvedata.com/time_series?symbol=" + value + ",EUR/USD,ETH/BTC:Huobi,TRP:TSX&interval=1min&apikey=a0f9d5c9c5284e5bae1eb967b10927eb";
-  fetch(url)
-    .then(function(response) {
-      return response.json();
-    }).then(function(json) {
-      console.log(json);
-    });
+  const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+fetch(URL, {
+    method: 'POST'
+})
+.then(response => response.json())
+.then(json => {
+    const date = json.current_date;
+    console.log(json);
+});
 });
