@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Creative title</title>
-  </head>
+<html lang="en">
 
-  <body>
-    <h1>Creative header</h1>
-    <form>
-      <label>Enter a U.S. city</label>
-      <input id="stockInput" type="text"></input><br/>
-      <input id="stockSubmit" type="submit" value="Submit"></input>
-    </form>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Forcast</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div id="intr">
+    <h1 id="h_title">Weather Anywhere</h1>
+
+    <div id='submit_form'>
+      <form>
+        <label id='lbl'>Enter a U.S. city<br></label>
+        <input id="stockInput" type="text"></input><br/>
+          <input id="stockSubmit" type="submit" value="Submit"></input>
+      </form>
+    </div>
     <div id="stockResults">
     </div>
-    <p>Creative paragraph</p>
-    <p>Another creative paragraph</p>
-  </body>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="java.js">
+  </script>
+
+
+  <div class='footer'>
+      <a href='https://github.com/BYUCS260/weather-app-cathepsin'>
+        <img src='/images/git.png' alt='github' />
+      </a>
+  </div>
+</body>
 
 </html>
